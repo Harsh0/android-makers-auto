@@ -59,10 +59,10 @@ public class BeatBoxMusicService
         MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
 
     //region RETRIEVE AN AWESOME MP3
-//    player = new MediaPlayer();
-//    player.setAudioStreamType(AudioManager.STREAM_MUSIC);
-//
-//    retrieveMediaMetadata("music", MediaItem.FLAG_PLAYABLE);
+    player = new MediaPlayer();
+    player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+    retrieveMediaMetadata("music", MediaItem.FLAG_PLAYABLE);
     //endregion
 
     //region RETRIEVE INSTRUMENT MP3s
@@ -109,10 +109,10 @@ public class BeatBoxMusicService
     final List<MediaItem> items = new ArrayList<>();
 
     //region ADD AN AWESOME MUSIC AT THE ROOT
-//    if (ROOT.equals(parentMediaId))
-//    {
-//      items.add(new MediaItem(metadatas.get("music").getDescription(), MediaItem.FLAG_PLAYABLE));
-//    }
+    if (ROOT.equals(parentMediaId))
+    {
+      items.add(new MediaItem(metadatas.get("music").getDescription(), MediaItem.FLAG_PLAYABLE));
+    }
     //endregion
 
     //region ADD A FOLDER THAT CAN BE BROWSED
