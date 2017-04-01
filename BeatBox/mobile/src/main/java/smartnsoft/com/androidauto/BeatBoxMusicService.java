@@ -8,6 +8,7 @@ import java.util.Map;
 
 import android.graphics.BitmapFactory;
 import android.media.AudioManager;
+import android.media.MediaDescription;
 import android.media.MediaMetadata;
 import android.media.MediaMetadata.Builder;
 import android.media.MediaMetadataRetriever;
@@ -66,10 +67,10 @@ public class BeatBoxMusicService
     //endregion
 
     //region RETRIEVE INSTRUMENT MP3s
-//    for (String resourceName : INSTRUMENTS)
-//    {
-//      retrieveMediaMetadata(resourceName, MediaItem.FLAG_PLAYABLE);
-//    }
+    for (String resourceName : INSTRUMENTS)
+    {
+      retrieveMediaMetadata(resourceName, MediaItem.FLAG_PLAYABLE);
+    }
     //endregion
   }
 
@@ -116,24 +117,24 @@ public class BeatBoxMusicService
     //endregion
 
     //region ADD A FOLDER THAT CAN BE BROWSED
-//    if (ROOT.equals(parentMediaId)){
-//      items.add(new MediaItem(
-//          new MediaDescription.Builder()
-//              .setMediaId(MUSIC_INSTRUMENTS)
-//              .setTitle(MUSIC_INSTRUMENTS)
-//              .setIconBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.ic_guitar))
-//              .build(), MediaItem.FLAG_BROWSABLE));
-//    }
+    if (ROOT.equals(parentMediaId)){
+      items.add(new MediaItem(
+          new MediaDescription.Builder()
+              .setMediaId(MUSIC_INSTRUMENTS)
+              .setTitle(MUSIC_INSTRUMENTS)
+              .setIconBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.ic_guitar))
+              .build(), MediaItem.FLAG_BROWSABLE));
+    }
     //endregion
 
     //region ADD INSTRUMENT MP3s WITHIN THE TREE VIEW SECOND LEVEL
-//    if (MUSIC_INSTRUMENTS.equals(parentMediaId))
-//    {
-//      for (String resourceName : INSTRUMENTS)
-//      {
-//        items.add(new MediaItem(metadatas.get(resourceName).getDescription(), MediaItem.FLAG_PLAYABLE));
-//      }
-//    }
+    if (MUSIC_INSTRUMENTS.equals(parentMediaId))
+    {
+      for (String resourceName : INSTRUMENTS)
+      {
+        items.add(new MediaItem(metadatas.get(resourceName).getDescription(), MediaItem.FLAG_PLAYABLE));
+      }
+    }
     //endregion
 
     result.sendResult(items);
