@@ -9,10 +9,10 @@ This app demonstrates basic functionalities for Android Auto in terms of playing
 
 Music credits :
 
-Rick Astley - Never Gonna Give You Up
-Smooth McGroove - Super Mario World Overworld Theme Acapella
-Beethoven - Moonlight Sonata
-Crazy Accordion Trio - We Are Young
-Sabin Adhikari - Sleepless Night
-Metal Guitar Stuff - Backing Track 220 BPM
-Christian Altenburger - Violin Concerto No. 5 In A Major; K. 219, “Turkish”: II. Adagio
+* Rick Astley - Never Gonna Give You Up
+* Smooth McGroove - Super Mario World Overworld Theme Acapella
+* Beethoven - Moonlight Sonata
+* Crazy Accordion Trio - We Are Young
+* Sabin Adhikari - Sleepless Night
+* Metal Guitar Stuff - Backing Track 220 BPM
+* Christian Altenburger - Violin Concerto No. 5 In A Major; K. 219, “Turkish”: II. Adagio
