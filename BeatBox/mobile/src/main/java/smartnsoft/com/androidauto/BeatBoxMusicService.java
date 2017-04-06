@@ -230,7 +230,7 @@ public class BeatBoxMusicService
       for (int index = 0; index < INSTRUMENTS.length; index++)
       {
         if(currentStream.getString(MediaMetadata.METADATA_KEY_MEDIA_ID).equals(INSTRUMENTS[index])) {
-          currentStream = metadatas.get(INSTRUMENTS[(index + 1) % INSTRUMENTS.length]);
+          currentStream = metadatas.get(INSTRUMENTS[INSTRUMENTS.length + (index - 1) % INSTRUMENTS.length]);
           break;
         }
       }
